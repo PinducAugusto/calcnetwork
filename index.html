@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo IP Redes 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/script.js" defer></script>
+
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="col">
+            <div class="row border border-dark border-3 rounded" id="main">
+                <h1 class="text title mt-3">Cálculo de Rede</h1>
+                <p class="text paragraph p">Insira seu IP e sua Máscara de Rede, e calcularemos informações importantes para você!</p>
+                <div class="inputs">
+                    <span class="text"><p>Endereço IP:</p></span>
+                    <input class="mb-3" type="text" name="ip" id="ip" placeholder="xxx.xxx.xxx.xxx">
+                </div>
+                <div class="inputs">
+                    <span class="text"><p>Máscara de Rede:</p></span>
+                    <input class="mb-3" type="text" name="netMask" id="netMask" placeholder="xxx.xxx.xxx.xxx">
+                </div>
+                <div class="input-group class">
+                    <ul>
+                        <li>
+                            <input class="mr-1" type="radio" name="class" id="classA" value="A" checked>
+                            <label for="classA">Classe A</label>
+                        </li>
+                        <li>
+                            <input class="mr-1" type="radio" name="class" id="classB" value="B">
+                            <label for="classB">Classe B</label>
+                        </li>
+                        <li>
+                            <input class="mr-1" type="radio" name="class" id="classC" value="C">
+                            <label for="classC">Classe C</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="button">
+                    <button class="btn btn-primary mb-3" id="btnSubmit">Calcular</button>
+                </div>
+
+                <div class="result">
+                    <div id="results">
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <span id="signature">Criado por Augusto Cesar, 2023</span>
+</body>
+</html>
